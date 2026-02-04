@@ -1,0 +1,35 @@
+title: Waymaker Labs Blog
+description: Waymaker Labs 기술 블로그
+url: "https://waymakerlabs.github.io"
+baseurl: ""
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Author
+author:
+  name: Waymaker Labs
+  email: ""
+
+# Social links (optional)
+# twitter_username: waymakerlabs
+# github_username: waymakerlabs
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalink
+permalink: /:year/:month/:day/:title/
+
+# Timezone
+timezone: Asia/Seoul
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
