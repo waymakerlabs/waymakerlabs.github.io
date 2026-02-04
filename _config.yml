@@ -1,21 +1,70 @@
+# Site Settings
 title: WayMaker Labs Blog
+subtitle: "Way forward, together"
+name: WayMaker Labs
 description: AX Consulting & AI Solutions - Way forward, together.
 url: "https://waymakerlabs.github.io"
 baseurl: ""
+repository: "waymakerlabs/waymakerlabs.github.io"
 
-# Build settings
-theme: minima
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-paginate
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
 
 # Author
-author: WayMaker Labs
+author:
+  name: "WayMaker Labs"
+  bio: "We Make the Way"
+  location: "Seoul, Korea"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://waymakerlabs.kr"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/waymakerlabs"
 
-# Social links
-github_username: waymakerlabs
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/waymakerlabs"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://waymakerlabs.kr"
 
-# Markdown settings
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Markdown
 markdown: kramdown
 highlighter: rouge
 
@@ -25,7 +74,7 @@ permalink: /:year/:month/:day/:title/
 # Timezone
 timezone: Asia/Seoul
 
-# Exclude from processing
+# Exclude
 exclude:
   - Gemfile
   - Gemfile.lock
