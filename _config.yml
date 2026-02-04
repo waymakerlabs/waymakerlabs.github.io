@@ -1,7 +1,7 @@
 # Site Settings
-title: WayMaker Labs Blog
+title: WayMaker Blog
 subtitle: "Way forward, together"
-name: WayMaker Labs
+name: WayMaker
 description: AX Consulting & AI Solutions - Way forward, together.
 url: "https://waymakerlabs.github.io"
 baseurl: ""
@@ -24,7 +24,7 @@ paginate_path: /page:num/
 
 # Author
 author:
-  name: "WayMaker Labs"
+  name: "WayMaker"
   bio: "We Make the Way"
   location: "Seoul, Korea"
   links:
