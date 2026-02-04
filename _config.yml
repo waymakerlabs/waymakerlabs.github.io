@@ -1,5 +1,5 @@
-title: Waymaker Labs Blog
-description: Waymaker Labs 기술 블로그
+title: WayMaker Labs Blog
+description: AX Consulting & AI Solutions - Way forward, together.
 url: "https://waymakerlabs.github.io"
 baseurl: ""
 
@@ -11,12 +11,11 @@ plugins:
 
 # Author
 author:
-  name: Waymaker Labs
+  name: WayMaker Labs
   email: ""
 
-# Social links (optional)
-# twitter_username: waymakerlabs
-# github_username: waymakerlabs
+# Social links
+github_username: waymakerlabs
 
 # Markdown settings
 markdown: kramdown
