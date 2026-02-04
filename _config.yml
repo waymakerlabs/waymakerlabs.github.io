@@ -10,9 +10,7 @@ plugins:
   - jekyll-seo-tag
 
 # Author
-author:
-  name: WayMaker Labs
-  email: ""
+author: WayMaker Labs
 
 # Social links
 github_username: waymakerlabs
