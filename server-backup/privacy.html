@@ -1,0 +1,35 @@
+---
+layout: single
+title: "Waymaker Server Backup — Privacy Policy"
+description: "How Waymaker Server Backup accesses, uses, stores, and deletes Google Drive data."
+permalink: /server-backup/privacy.html
+author_profile: false
+---
+
+<p><strong>Effective date: November 5, 2026</strong></p>
+<p>This policy applies to <a href="{{ '/server-backup/' | relative_url }}">Waymaker Server Backup</a>, a private, owner-operated utility for encrypted server backups. The authorized Google account owner controls the connection and the designated backup repository. It is not offered as a public, multi-user backup service.</p>
+
+<h2>Data accessed and why</h2>
+<p>The utility accesses encrypted backup objects and their file or folder metadata, such as object identifiers, names, sizes, timestamps, and integrity information. It also uses the account and folder metadata needed to authenticate, locate the repository, and check available storage. It uses this information to upload backups, list and verify them, restore selected data, and carry out the operator's retention or deletion requests.</p>
+<p>Backup contents are selected by the server operator and may include server data and configuration. Restic encrypts backup contents locally before they are uploaded to Google Drive.</p>
+
+<h2>Google permissions</h2>
+<p>The requested scope is <code style="overflow-wrap:anywhere">https://www.googleapis.com/auth/drive</code>. It grants broad Drive file access, including the ability to read, create, change, and delete files. It is used to maintain an existing backup repository, including historical objects created by another OAuth client.</p>
+<p>The software is configured to operate in the designated backup repository and to read the metadata necessary to maintain it. This operational configuration does not reduce the technical breadth of the Google permission. The utility has no feature for browsing unrelated documents or using them for another purpose.</p>
+
+<h2>Storage and security</h2>
+<p>Google Drive stores the encrypted backup objects in the connected account. OAuth tokens and client credentials are kept in protected server configuration for authorized operator processes. Recovery copies of necessary credentials or configuration may be included inside encrypted backups. They are not embedded in these web pages or published in the website repository. Backup encryption secrets remain under the operator's control.</p>
+
+<h2>Use and sharing</h2>
+<p>Google user data is used only for the disclosed backup, verification, recovery, and retention operations. It is not sold, shared with advertisers, used for advertising, or used to train general-purpose AI models. It is not shared with other users or unrelated third parties. Transfers to Google Drive are for the authorized storage service. The operator may access data when carrying out the account owner's authorized recovery or support requests.</p>
+<p>Waymaker Server Backup's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+
+<h2>Retention, deletion, and revocation</h2>
+<p>Encrypted backup snapshots remain in the designated Drive repository until the operator removes them under the backup retention policy or deletes the repository. The owner can request deletion or delete the repository through Google Drive. Deleting backups can remove the ability to recover the corresponding server data.</p>
+<p>The owner can revoke access at any time through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents future authorized access but does not automatically delete existing Drive backups, local recovery copies, or server configuration. Those are removed separately by the operator when requested and when no longer needed for recovery.</p>
+
+<h2>This website</h2>
+<p>These information pages do not collect Google passwords or OAuth credentials and do not perform Google authorization. They are hosted on GitHub Pages, which may process ordinary web request information under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+
+<h2>Contact and changes</h2>
+<p>For access, deletion, or policy questions, contact <a href="mailto:waymakerlabs@gmail.com">waymakerlabs@gmail.com</a>. Material changes to data use will be disclosed here before the new use begins, with renewed consent where required.</p>
