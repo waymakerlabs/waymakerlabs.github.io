@@ -1,27 +1,15 @@
 ---
 layout: single
 title: "Waymaker Server Backup"
-description: "Owner-operated, encrypted server backups to Google Drive."
+description: "Encrypted backups to the account owner's Google Drive."
 permalink: /server-backup/
 author_profile: false
 ---
 
-<p><strong>Waymaker Server Backup</strong> is a private utility operated by Waymaker for the authorized account owner's server backups. It is not a public backup service or a sign-up service for other users.</p>
+<p>Waymaker Server Backup is a private utility for the authorized account owner. It encrypts selected data before saving it to the owner’s Google Drive, where backups can be verified and restored.</p>
+<p>계정 소유자가 지정한 데이터를 암호화해 본인의 Google Drive에 백업하고, 필요할 때 복원하는 개인용 도구입니다.</p>
 
-<p>서버 운영자가 지정한 데이터를 암호화해 본인의 Google Drive에 보관하고, 필요한 경우 복원하는 도구입니다.</p>
+<h2>Google Drive access</h2>
+<p>The app requests full Google Drive access to manage backups in an existing backup location, including files created before this app was authorized. This permission can read, create, change, and delete Drive files and is not limited by Google to one folder. The app uses it for the designated backups and the account and folder information needed to manage them.</p>
 
-<h2>What it does</h2>
-<ul>
-  <li>Encrypts selected server data and configuration locally with restic before uploading it.</li>
-  <li>Stores and verifies encrypted backup objects in the operator's designated Google Drive repository folder.</li>
-  <li>Reads existing backups for integrity checks and recovery, and manages retention when the operator requests it.</li>
-</ul>
-
-<h2>Why it requests Google Drive access</h2>
-<p>The utility uses the Google Drive API through rclone to maintain an existing backup repository, including files created before this OAuth client was registered. It requests the full Drive scope, <code style="overflow-wrap:anywhere">https://www.googleapis.com/auth/drive</code>.</p>
-<p><strong>This Google permission is broader than a single folder:</strong> it can authorize reading, creating, changing, and deleting files in the connected Drive account. The utility is operationally configured to use the designated backup repository and the account or folder metadata needed to locate and maintain it. That configured folder limit is not a folder-level restriction enforced by the OAuth scope.</p>
-
-<h2>Authorization and control</h2>
-<p>Only the account owner authorizes access through Google's consent flow. This website does not ask for Google passwords or OAuth tokens. The operator can revoke the connection in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation stops future authorized access; it does not delete backups already stored in Drive.</p>
-
-<p><a href="{{ '/server-backup/privacy.html' | relative_url }}">Privacy policy</a> · Support: <a href="mailto:waymakerlabs@gmail.com">waymakerlabs@gmail.com</a></p>
+<p><a href="{{ '/server-backup/privacy.html' | relative_url }}">Privacy policy</a> · <a href="mailto:waymakerlabs@gmail.com">Contact</a></p>
